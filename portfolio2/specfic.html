@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="specfic.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 160px;
+            text-align: center;
+            font-size: 50px;
+        }
+        nav {
+            background-color: black;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5);
+            padding-bottom: 50px; /* 添加底部内边距以防止底部固定在屏幕底部时部分内容被遮挡 */
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px; /* 添加顶部外边距以增加与标题之间的间距 */
+        }
+        .gallery img {
+            margin: 0 10px; /* 设置图片间距 */
+            width: 300px; /*/设置图片宽度 */
+            height: auto; /* 根据宽度等比例缩放高度 */
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+  <video autoplay loop muted>
+    <source src="胡蕾 理想的宅的副本.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+<header>
+    <h1>PORTFOLIO</h1>
+</header>
+
+<nav>
+    <a href="#ILLUSTRATION">ILLUSTRATION</a>
+    <a href="#POSTER">POSTER</a>
+    <a href="#PHOTOGRAPHY">PHOTOGRAPHY</a>
+    <a href="VIDEO.html">VIDEO</a>
+</nav>
+
+<section id="ILLUSTRATION">
+    <h2>ILLUSTRATION</h2>
+    <div class="gallery">
+        <img src="理想的宅.jpg" alt="Illustration 1">
+        <img src="小年回忆录.jpg" alt="Illustration 2">
+        <img src="灶王来我家.jpg" alt="Illustration 3">
+    </div>
+</section>
+
+<section id="POSTER">
+    <h2>POSTER</h2>
+    <div class="gallery">
+        <img src="1.jpg" alt="POSTER 1">
+        <img src="2.jpg" alt="POSTER 2">
+        <img src="3.jpg" alt="POSTER 3">
+    <div class="new-row">
+        <img src="迷宫.jpg" alt="New Poster">
+        <img src="no smoking.jpg" alt="New Poster">
+    </div>
+  </div>
+</section>
+
+<section id="PHOTOGRAPHY">
+    <h2>PHOTOGRAPHY</h2>
+    <div class="gallery">
+        <img src="图片1.jpg" alt="POSTER 1">
+        <img src="图片2.jpg" alt="POSTER 2">
+        <img src="图片3.jpg" alt="POSTER 3">
+    <div class="new-row">
+            <img src="图片4.jpg" alt="New Poster">
+            <img src="图片5.jpg" alt="New Poster">
+        </div>
+  </div>
+</section>
+
+<section id="VIDEO">
+    <h2>如需观看VIDEO，请点击最上方黑色栏“VIDEO”，点击后将跳转至相应页面</h2>
+
+<footer>
+    <p>版权所有 &copy; 2024 Lily's website</p>
+</footer>
+
+</body>
+</html>

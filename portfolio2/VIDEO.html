@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="VIDEO.css">
+    <title>名侦探柯南大结局</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            color: white;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5);
+            padding-bottom: 50px; /* 添加底部内边距以防止底部固定在屏幕底部时部分内容被遮挡 */
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        video {
+            width: 100%;
+            height: 80vh; /* 使用视口高度的80%来设置视频高度 */
+        }
+        .danmu-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 10%; /* 设置弹幕容器的高度 */
+            overflow: hidden;
+            z-index: 999;
+            pointer-events: none; /* 禁用弹幕容器的鼠标事件，使其不干扰页面其他内容的交互 */
+        }
+        .danmu {
+            position: absolute;
+            white-space: nowrap;
+            font-size: 16px;
+            color: white;
+            pointer-events: none; /* 禁用弹幕的鼠标事件，使其不干扰页面其他内容的交互 */
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="danmu-container"></div> <!-- 弹幕容器 -->
+        <video autoplay loop muted>
+            <source src="柯南大结局的副本.mp4" type="video/mp4">
+        </video>
+    </section>
+    <header>
+        <h1>VIDEO</h1>
+    </header>
+    <footer>
+        <p>版权所有 &copy; 2024 Lily's website</p>
+    </footer>
+
+    <script>
+        const danmus = [
+            "这是第一条弹幕哈哈哈",
+            "给自己当水军",
+            "青山刚昌我请问呢？怎么还没有大结局？",
+            "前面的家人，自己写结局吧～",
+        ];
+
+        function createDanmu() {
+            const danmuContainer = document.querySelector('.danmu-container');
+            const danmu = document.createElement('div');
+            danmu.classList.add('danmu');
+            danmu.innerText = danmus[Math.floor(Math.random() * danmus.length)];
+            danmu.style.top = `${Math.random() * 100}%`; // 弹幕位置随机设置在容器的任意高度
+            danmu.style.animationDuration = `${Math.random() * 8 + 8}s`; // 弹幕速度随机设置在8到16秒之间
+            danmuContainer.appendChild(danmu);
+
+            const animation = danmu.animate([
+                { left: '100%' },
+                { left: '-100%' }
+            ], {
+                duration: 15000, // 弹幕从右到左的时间，单位：毫秒
+                easing: 'linear',
+                iterations: Infinity
+            });
+
+            animation.onfinish = () => {
+                danmu.remove();
+            };
+        }
+
+        setInterval(createDanmu, 2000); // 每2秒创建一个新的弹幕
+    </script>
+</body>
+</html>

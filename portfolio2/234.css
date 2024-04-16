@@ -1,0 +1,38 @@
+/* 设置全局样式 */
+body {
+    font-family: Arial, sans-serif; /* 设置字体为 Arial 或者系统默认的 sans-serif 字体 */
+    margin: 0; /* 去除页面默认的外边距 */
+    padding: 0; /* 去除页面默认的内边距 */
+}
+
+/* 设置标题样式 */
+header {
+    color: black; /* 设置文字颜色为黑色 */
+    padding: 20px; /* 设置内边距为 20px */
+    text-align: center; /* 文本居中对齐 */
+    font-size: 24px; /* 设置字体大小为 24px，您可以根据需要调整此值 */
+}
+
+/* 设置背景视频样式 */
+video {
+    position: absolute; /* 设置视频绝对定位 */
+    top: 0; /* 顶部与父元素上边缘对齐 */
+    left: 0; /* 左侧与父元素左边缘对齐 */
+    min-width: 100%; /* 最小宽度为 100% */
+    min-height: 100%; /* 最小高度为 100% */
+    z-index: -1; /* 将视频放置在最底层 */
+}
+button {
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    text-decoration: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 5px; /* 将按钮与标题之间的间距缩小为 10px */
+}
