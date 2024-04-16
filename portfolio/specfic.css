@@ -1,0 +1,38 @@
+header h1 {
+    background-color: rgba(0, 0, 0, 0.5);;
+    color: white;
+    padding: 20px; /* 文字填充 */
+    text-align: center;
+    font-size: 50px;
+}
+
+
+
+
+.new-row {
+    display: flex;
+    flex-wrap: wrap; /* 允许内容换行 */
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* 间距 */
+}
+
+.new-row img {
+    margin: 0 10px; /* 图片间距 */
+    width: 300px; /* 图片宽度 */
+    height: auto; /* 根据宽度等比例缩放高度 */
+}
+
+<style>
+    .gallery img {
+        margin: 0 10px; /* 设置图片间距 */
+        width: 300px; /* 设置图片宽度 */
+        height: auto; /* 根据宽度等比例缩放高度 */
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* 添加过渡效果 */
+    }
+
+    .gallery img:hover {
+        transform: scale(1.1); /* 在鼠标悬停时放大图像 */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* 添加阴影效果 */
+    }
+</style>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>PORTFOLIO </title>
+    <link rel="stylesheet" href="234.css">
+    <style>
+        body {
+            font-family: 'Helvetica', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            position: relative;
+            color: white;
+            padding: 200px;
+            text-align: center;
+            font-size: 50px;
+        }
+        video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+        }
+        title {
+    letter-spacing: 5px; /* 调整标题的字间距为 5px */
+    margin-bottom: 10px; /* 增加标题底部间距为 10px */
+}
+       button {
+         padding: 10px 20px;
+         font-size: 20px;
+         background-color: #007bff;
+         color: white;
+         border: none;
+         cursor: pointer;
+         margin-top: 10px; /* 减少按钮顶部间距为 10px */
+         text-decoration: none;
+         position: absolute;
+         left: 50%;
+         transform: translateX(-50%);
+         bottom: 10px;
+       }
+    </style>
+</head>
+<body>
+
+<video id="bgVideo" autoplay loop muted>
+    <source src="胡蕾 理想的宅的副本.mp4" type="video/mp4">
+</video>
+
+<header>
+    <h1>Portfilio</h1>
+    <button onclick="window.location.href='file:///Users/apple/Desktop/portfolio/specfic.html'">点击，可跳转至详情页</button>
+</header>
+</body>
+</html>
